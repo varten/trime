@@ -44,8 +44,8 @@ jobs:
         run: ./script/dependency.sh
 
       - name: Build Trime
-        #run: make debug
-        run: make release
+        run: make debug
+        # run: make release
 
       - name: Add JNI cache
         if: ${{ !steps.jni-cache.outputs.cache-hit }}
