@@ -54,6 +54,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: trime.zip
-          path: app/build/outputs/apk/**/*.apk
+          #path: app/build/outputs/apk/**/*.apk
+          path: app/build/outputs/apk/**/*arm64*.apk
           # keep 90 days
           retention-days: 90
